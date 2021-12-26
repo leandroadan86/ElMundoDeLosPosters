@@ -22,7 +22,6 @@ body {
 
 
 .container {
-	width: 100%;
 	max-width: 1200px;
 	padding: 10px 5px 100px 5px;
 	display: grid;
@@ -79,4 +78,19 @@ body {
 
 .paginacion button:hover {
 	background: #db0510;
+}
+
+@media screen and (max-width:600px) {
+	.container{
+		padding: 10px 5px 100px 5px;
+		display: grid;
+		grid-template-columns: repeat(2, 0.5fr);
+		gap: 20px;
+	}
+	.container .pelicula .poster {
+		width: 70%;
+		margin-bottom: 10px;
+		border-radius: 15px;
+	}
+	
 }
